@@ -13,6 +13,9 @@ var1=value
 var2=value2
 var3="value 3"
 
+#取消变量
+unset var1
+
 #打印变量
 echo $var1
 echo '$var2' #will print $var2,所以''不能打印里面的内容
@@ -40,3 +43,6 @@ if [ ${UID} -ne 0 ]; then
 else
     echo 'root user'
 fi
+
+#设置变量生命后才可以使用
+#shopt -s -o nounset

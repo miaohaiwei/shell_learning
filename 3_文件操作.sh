@@ -9,8 +9,14 @@
 
 mkdir temp
 touch temp/temp.txt
-
+pwd -L
+pwd
+#显示真实的路径，不是软连接
+pwd -P
 echo "fasdfasdf\nfasdfs\n" >>temp/temp.txt
+
+#工作目录OLDPWD
+echo $OLDPWD
 
 实时更新
 tail -f temp/temp.txt

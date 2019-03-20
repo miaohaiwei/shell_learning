@@ -17,4 +17,5 @@ ps -aux |grep mhw
 #常用的选项有1 9 16 分别代表重启 强行杀掉 正常结束
 
 #查询进程打开的文件
-
+#lsof list open files
+#lsof [opt] filename

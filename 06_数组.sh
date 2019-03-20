@@ -15,6 +15,7 @@ arr2[1]="b"
 arr2[2]="c"
 arr2[3]="d"
 
+arr3=([1]="b" [2]="c" [0]="a")
 
 #数组访问
 echo ${arr1[0]}
@@ -23,3 +24,18 @@ echo ${arr1[*]}
 #数组长度
 echo ${#arr1[*]}
 
+#数组截取
+#取出数组的第一和第二元素
+echo ${arr1[*]:1:2}
+
+#若干数组进行拼接
+conn_arr=(${arr1[*]} ${arr2[*]})
+echo ${conn_arr[7]}
+
+#替换元素
+arr3=(${arr3[*]/a/aa})
+echo "arr3=${arr3[*]}"
+
+#取消数组
+unset arr3
+unset arr3[0]

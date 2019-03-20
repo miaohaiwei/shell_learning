@@ -22,6 +22,9 @@ let no2+=3
 echo $no2
 let no1--
 echo $no1
+let N=2**3 #2的3次方
+let M=15%7 #取余
+
 
 #bc 可进行浮点数的运算
 echo 基本运算:

@@ -14,6 +14,9 @@ echo enter password
 stty -echo
 #读取密码
 read password
+#read的提示，可以是read -p "enter password" password  
+#如果不指定接收的变量名，那么就会放到环境变量REPLY中
+
 #打开输出
 stty echo
 #输出信息
